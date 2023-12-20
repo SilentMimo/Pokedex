@@ -454,3 +454,100 @@ Styles of Pokemon Single Page
 	background-color: var(--color-primary-hover);
 	color: #000;
 }
+@media screen and (max-width: 1280px) {
+	.card-list-pokemon{
+		grid-template-columns: repeat(3, 1fr);
+		
+	}
+	.number-pokemon{
+		font-size: 100px;
+   }
+
+   .main-pokemon{
+	width: 420px;
+   }
+   .container-stats{
+	flex-direction: column;
+   }
+}
+@media screen and (max-width: 900px) {
+	header{
+		flex-direction: column;
+	}
+	.card-img img {
+		width: auto;
+	}
+	.card-list-pokemon{
+		grid-template-columns: repeat(1, 1fr);
+		order: 2;
+	}
+
+	.main-pokemon{
+	order: 1;
+	height: 120vh;
+	}
+
+	.container-selected{
+		flex-direction: column;
+
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	header{
+		flex-direction: column;
+	}
+	.card-img img {
+		width: auto;
+	}
+	.container-selected{
+		flex-direction: column;
+
+	}
+
+	.card-list-pokemon{
+		grid-template-columns: repeat(1, 1fr);
+		order: 2;
+	}
+
+	.main-pokemon{
+		order: 1;
+		padding: 15px;
+		height: 120vh;
+	}
+	.number-pokemon{
+	 	font-size: 100px;
+	}
+	.container-img-pokemon{
+		padding: 15px 15px 15px 0; ;
+	}
+	.card-pokemon{
+		width: auto;
+	}
+	.container-stats{
+		flex-direction: column;
+	}
+
+
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+	.main-pokemon{
+		height: 130vh;
+	}
+	header form{
+		flex-direction: column;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	.main-pokemon{
+		height: 170vh;
+	}
+}
